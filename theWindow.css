@@ -1,0 +1,154 @@
+/*Style reset */
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*FONTS*/
+
+@font-face {
+  font-family: SFAlienEncounters;
+  src: url("resources/fonts/TrueType/SFAlienEncounters.ttf");
+}
+@font-face {
+  font-family: oldschool;
+  src: url("resources/fonts/TrueType/lunchds.ttf");
+  /*
+  components\vintage-os-window\resources\fonts\TrueType
+  */
+}
+/*VINTAGE OS WINDOW STYLING*/
+/*colors*/
+:root {
+  --mantis: #70bc4fff;
+  --middle-blue-purple: #8080c0ff;
+  --rich-black-fogra-39: #040204ff;
+  --skobeloff: rgb(4, 124, 126);
+  --silver: #c4c2c4ff;
+  --fuchsia: #fc0ffcff;
+}
+.box2 {
+  /*Comment me out, i am a template*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--silver);
+}
+.theWindow {
+  width: 80%;
+  height: 500px;
+  font-family: oldschool;
+  border: 2px solid gray;
+  border-left: 2px solid rgb(197, 197, 197);
+  max-width: 960px;
+  margin: 3rem 0 3rem 0;
+  box-shadow: 20px 15px #00ff00;
+}
+
+.theWindow .title {
+  background-image: url("resources/img/titleBG.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+}
+.theWindow button {
+  font-family: oldschool;
+  height: 3rem;
+  width: 9rem;
+  border-right: 2px solid rgb(63, 63, 63);
+  border-bottom: 2px solid rgb(63, 63, 63);
+  background-color: var(--silver);
+}
+.theWindow .title .heading {
+  color: white;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.theWindow .title .topButtons {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.theWindow .title .topButtons button {
+  box-shadow: 1px 1px black;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.theWindow .page {
+  height: 95%;
+  padding: 1rem;
+
+  background-color: var(--silver);
+  font-size: 6rem;
+  border-left: 1px solid grey;
+}
+.theWindow .page strong {
+  font-family: SFAlienEncounters;
+  font-weight: bold;
+  padding-left: 2rem;
+  color: var(--fuchsia);
+  font-size: 2rem;
+  text-shadow: 2px 2px var(--skobeloff);
+}
+.theWindow ul {
+  padding-left: 6rem;
+  font-size: 3rem;
+  border: rgb(155, 154, 154);
+}
+.theWindow .page h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+}
+.theWindow .page p {
+  text-align: justify;
+  padding: 2rem;
+  font-weight: lighter;
+}
+.theWindow .page ul {
+  font-family: "Times New Roman", Times, serif;
+}
+.theWindow .contentArea {
+  height: 87.5%;
+  background-color: var(--silver);
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 4fr;
+}
+.theWindow .contentArea .left img {
+  max-width: 100%;
+}
+.theWindow .line {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(155, 154, 154);
+  border-top: 1px solid rgb(155, 154, 154);
+  border-bottom: 1.5px solid rgb(245, 245, 245);
+  border-right: 1px solid rgb(245, 245, 245);
+}
+.theWindow .bottomButtons {
+  background-color: var(--silver);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 12.5%;
+}
+.theWindow span {
+  font-weight: bold;
+  font-style: italic;
+}
+.theWindow .bottomButtons .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.theWindow .bottomButtons .buttonContainer {
+  padding-right: 8px;
+}
